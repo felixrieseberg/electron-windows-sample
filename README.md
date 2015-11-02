@@ -5,5 +5,8 @@ This is a simple example, showcasing [WinJS](http://buildwinjs.com). WinJS is th
 
 Multiple bindings exist for WinJS - it can be used standalone, or together with Knockout, React, or Angular. This example is built using the [React bindings](https://github.com/winjs/react-winjs).
 
+#### Contents
+This example is basically just an Electron packaged version of the WinJS-React example "address book" by [AmazingJaze](https://github.com/AmazingJaze) with a few small changes.
+
 #### License 
 Licensed [MIT](LICENSE.md) - Copyright 2015 Microsoft Corporation
