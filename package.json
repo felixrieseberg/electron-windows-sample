@@ -4,7 +4,7 @@
   "description": "A minimal Electron sample application showing how to make an Electron app look native on Windows",
   "main": "main.js",
   "scripts": {
-    "start": "webpack --progress --colors && electron main.js"
+    "start": "webpack --progress --colors --watch && electron main.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "webpack": "^1.9.4"
   },
   "dependencies": {
+    "node-notifier": "^4.3.1",
     "react": "^0.13.3",
     "react-winjs": "^2.4.0",
     "winjs": "^4.4.0"

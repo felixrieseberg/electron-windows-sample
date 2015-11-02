@@ -4,6 +4,7 @@ var React = require('react');
 var ReactWinJS = require('react-winjs');
 
 var PeoplePage = require('./people-page.jsx');
+var SettingsPage = require('./settings-page.jsx');
 var OtherPage = require('./other-page.jsx');
 var ProfilePicture = require('./profile-picture.jsx');
 var Data = require('./fake-data.js');
@@ -124,6 +125,10 @@ var App = React.createClass({
         );
     },
     
+    renderSettingsPage: function () {
+        return <SettingsPage />
+    },
+     
     renderOtherPage: function () {
         return <OtherPage location={this.state.location} />
     },
@@ -131,6 +136,8 @@ var App = React.createClass({
     renderContent: function () {
         if (this.state.location.length === 0 || this.state.location[0] === "people") {
             return this.renderPeoplePage();
+        } else if (this.state.location[0] === "settings") {
+            return this.renderSettingsPage();
         } else {
             return this.renderOtherPage();
         }
