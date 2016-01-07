@@ -1,6 +1,6 @@
 {
   "name": "electron-windows-sample",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal Electron sample application showing how to make an Electron app look native on Windows",
   "main": "main.js",
   "scripts": {
